@@ -257,7 +257,7 @@ let start = () => {
         document.querySelector('.splash .text').innerHTML = 'CONNECTED_TO_PROXYDATABASE';  // Exibe a mensagem "CONEXÃO COM PROXY DATABASE"
         document.querySelector('.minigame .hack').classList.remove('hidden');  // Torna visível a tela de hack
 
-        timer_game = setInterval(moveCodes, 1500);  // Inicia o movimento dos códigos a cada 1,5 segundos
+        timer_game = setInterval(moveCodes, 1600);  // Inicia o movimento dos códigos a cada 1,5 segundos
 
         game_started = true;  // Define o estado do jogo como iniciado
 
