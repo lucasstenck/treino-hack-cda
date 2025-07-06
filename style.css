@@ -1,0 +1,151 @@
+/* Basic body styling */
+body{
+    background-color: #2a122c; /* Set a dark purple background color */
+    font-family: sans-serif; /* Use sans-serif font for the text */
+}
+
+/* Styling for streak display section */
+.streaks {
+    display: block; /* Make streaks block-level element */
+    margin: 40px auto; /* Center the streaks section with margin */
+    text-align: center; /* Center-align the text */
+    font-size: 30px; /* Set font size */
+    font-weight: bold; /* Make the font bold */
+    text-transform: uppercase; /* Make text uppercase */
+    font-weight: 200; /* Set font weight */
+    color: white; /* Set text color to white */
+    width: -moz-fit-content; /* Use fit-content for width in Firefox */
+    width: fit-content; /* Automatically adjust width to content */
+    background-color: #281b29; /* Set background color to dark purple */
+    padding: 12px; /* Add padding inside the streaks section */
+    border-radius: 18px; /* Round the corners of the streaks section */
+}
+
+/* Styling for best time and current time display */
+.time {
+    display: inline-block; /* Display these elements inline-block */
+    width: 100px; /* Set the width of the elements */
+}
+
+/* Styling for icon within streaks section */
+.streaks .fa {
+    padding: 0 10px; /* Add padding around the icon */
+}
+
+/* Timeout value display styling */
+.timeout_value{
+    font-size: 12px; /* Set font size */
+    display: inline-block; /* Display as inline-block */
+    width: 18px; /* Set width */
+    text-align: right; /* Align the text to the right */
+    padding: 9px 12px 9px 5px; /* Add padding inside the timeout value */
+}
+
+/* Minigame section styling */
+.minigame{
+    margin: 0 auto 20px; /* Center-align the minigame section with margin */
+    width: 540px; /* Set the width of the minigame */
+    min-width: 540px; /* Set minimum width */
+    max-width: 540px; /* Set maximum width */
+    background-color: #31173b; /* Set background color to dark purple */
+    padding: 30px 0; /* Add padding to top and bottom */
+    border: solid 1px white; /* Add a white border around the minigame */
+}
+
+/* Splash screen (starting text) styling */
+.splash{
+    display: inline-block; /* Display splash screen as inline-block */
+    width: 100%; /* Set width to 100% */
+    text-align: center; /* Center-align the text */
+    color: white; /* Set text color to white */
+    font-size: 16px; /* Set font size */
+}
+
+/* Hacker text inside the splash screen */
+.splash .hacker{
+    font-size: 65px; /* Set font size */
+    margin-bottom: 30px; /* Add margin below */
+}
+
+/* Text styling for splash screen */
+.splash .text{
+    font-weight: 100; /* Set font weight */
+    color: rgb(152, 0, 182); /* Set text color to purple */
+    position: relative; /* Position relative to parent */
+    top: -10px /* Move the text 10px upwards */
+}
+
+/* Styling for the "find" section in the minigame */
+.minigame .find{
+    text-align: center; /* Center-align the text */
+    color: white; /* Set text color to white */
+    font-size: 30px; /* Set font size */
+    user-select: none; /* Disable text selection */
+    margin-top: 10px; /* Add margin on top */
+}
+
+/* Each "find" item inside the minigame */
+.minigame .find > div{
+    display: inline-block; /* Display each find item inline */
+}
+
+/* Timer section styling */
+.minigame .timer{
+    text-align: center; /* Center-align the timer */
+    color: green; /* Set text color to green */
+    font-size: 14px; /* Set font size */
+    margin-bottom: 15px; /* Add margin below */
+}
+
+/* Styling for the codes section inside the minigame */
+.minigame .codes {
+    display: flex; /* Use flexbox for code display */
+    flex-wrap: wrap; /* Allow codes to wrap within the container */
+    width: 400px; /* Set fixed width */
+    margin: auto; /* Center-align the codes section */
+    padding-top: 20px; /* Add padding at the top */
+}
+
+/* Each individual code inside the codes section */
+.minigame .codes > div{
+    flex: 1 0 10%; /* Flex item with flexible growth */
+    margin: 7px 0; /* Add margin on top and bottom */
+    color: white; /* Set text color to white */
+    text-align: center; /* Center-align the text */
+    font-size: 18px; /* Set font size */
+}
+
+/* Red-colored code inside the codes section */
+.minigame .codes > div.red{
+    color: red; /* Set red color for incorrect codes */
+}
+
+/* Green-colored code inside the codes section */
+.minigame .codes > div.green{
+    color: green; /* Set green color for correct codes */
+}
+
+/* Mirrored effect for the "find" and "codes" sections */
+.minigame .mirrored .find > div,
+.minigame .mirrored .codes > div {
+    -moz-transform: scale(-1, -1); /* Firefox transformation */
+    -o-transform: scale(-1, -1); /* Opera transformation */
+    -webkit-transform: scale(-1, -1); /* Webkit transformation */
+    transform: scale(-1, -1); /* Flip horizontally and vertically */
+}
+
+/* Hidden elements that are not displayed */
+.hidden {
+    display: none; /* Hide the element */
+}
+
+/* Restart section with a button to play again */
+.restart{
+    text-align: center; /* Center-align the restart section */
+}
+
+/* Styling for the restart button */
+.btn_again {
+    padding: 6px 15px; /* Add padding to the button */
+    font-weight: bold; /* Make button text bold */
+}

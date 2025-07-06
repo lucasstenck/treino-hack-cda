@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag to specify the character encoding of the page -->
+    <meta charset="utf-8" />
+
+    <!-- The title of the web page that will be displayed on the browser tab -->
+    <title>TREINO HACKING CDA</title>
+
+    <!-- Viewport settings to ensure proper scaling on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.4">
+
+    <!-- Link to the favicon image displayed on the browser tab -->
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- Link to the external CSS file for styling the page -->
+    <link rel="stylesheet" href="style.css?v=20211231">
+
+    <!-- Link to the external JavaScript file that controls the page's functionality -->
+    <script defer src="script.js?v=20211231"></script>
+</head>
+<body>
+   
+    <!-- A section to display the current streak and remaining time -->
+    <div class="streaks">
+        <!-- This span will display the current streak (e.g., number of successful attempts) -->
+        <span class="streak"></span> 
+
+        <!-- Display the remaining time with a default value of 18.00 seconds -->
+        TEMPO RESTANTE: <span class="time" id="timer">18.00</span>
+    </div>
+    
+    <!-- Main section of the minigame -->
+    <div class="minigame">
+        <!-- Splash screen that shows a starting message -->
+        <div class="splash"><span class="text">JOGO COMEÇANDO</span></div>
+        
+        <!-- Hack game section, initially hidden, that will display elements like find and codes -->
+        <div class="hack hidden">
+            <!-- Placeholder for the 'find' element, where the user may interact -->
+            <div class="find"></div>
+
+            <!-- Placeholder for the 'codes' element, which will show the game codes -->
+            <div class="codes"></div>
+        </div>
+    </div>
+    
+    <!-- Section for restarting the game, showing a button to change the code -->
+    <div class="restart">
+        <!-- Button to trigger the restart of the game or change the code -->
+        <button class="btn_again">TROCAR CÓDIGO</button>
+    </div>
+    
+</body>
+</html>
